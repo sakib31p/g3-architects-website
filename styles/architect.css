@@ -112,42 +112,90 @@ main {
     font-weight: 700;
 }
 
+/* featured section style  */
+.feature {
+    margin-top: 130px;
+    display: flex;
+    gap: 100px;
+}
+
+.feature .section-title {
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+
+.featured-content .card {
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+.featured-img img{
+    margin-left: 50px;
+}
+.ten-years {
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFF;
+    width: 342px;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+}
+.ten-years h2{
+    font-size: 65px;
+    font-weight: 700;
+    margin: 0;
+}
+.ten-years p{
+    font-size: 25px;
+    font-weight: 500;
+}
+
 /* fact card container  */
-.facts-card-container{
+.facts-card-container {
     display: flex;
     justify-content: space-around;
 }
+
 .facts-card-container .card {
     border-radius: 8px;
     border: 1px solid #FF900E;
     text-align: center;
     padding: 30px;
 }
-.facts-card-container .card-title{
+
+.facts-card-container .card-title {
     font-size: 20px;
     font-weight: 600;
     color: #727272;
     margin-top: 5px;
 }
-.facts-card-container .card-stats{
+
+.facts-card-container .card-stats {
     font-size: 45px;
     /* font-weight: 600;  */
     color: #424242;
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
 /* sponsors style  */
-.sponsors{
+.sponsors {
     text-align: center;
 }
-.sponsor-img-cointainer{
+
+.sponsor-img-cointainer {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     margin-top: 50px;
     gap: 10px;
 }
-.sponsor-img-cointainer img{
+
+.sponsor-img-cointainer img {
     width: 165px;
 }
 
@@ -173,6 +221,7 @@ main {
 
     nav,
     .teams-container,
+    .feature,
     .facts-card-container,
     .sponsor-img-cointainer {
         flex-direction: column;
@@ -181,7 +230,14 @@ main {
     .teams-img-container {
         grid-template-columns: 1fr;
     }
-    .facts-card-container{
+    .featured-img img{
+        width: 70%;
+    }
+    .ten-years{
+        width: 60%;
+    }
+    
+    .facts-card-container {
         gap: 20px;
     }
 
