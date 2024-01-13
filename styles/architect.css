@@ -121,7 +121,7 @@ main {
     border-radius: 8px;
     border: 1px solid #FF900E;
     text-align: center;
-    padding: 20px;
+    padding: 30px;
 }
 .facts-card-container .card-title{
     font-size: 20px;
@@ -136,8 +136,20 @@ main {
     margin-top: 10px;
     margin-bottom: 10px;
 }
-
-
+/* sponsors style  */
+.sponsors{
+    text-align: center;
+}
+.sponsor-img-cointainer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+    gap: 10px;
+}
+.sponsor-img-cointainer img{
+    width: 165px;
+}
 
 
 
@@ -161,7 +173,8 @@ main {
 
     nav,
     .teams-container,
-    .facts-card-container {
+    .facts-card-container,
+    .sponsor-img-cointainer {
         flex-direction: column;
     }
 
